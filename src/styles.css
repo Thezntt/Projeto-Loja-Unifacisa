@@ -1,1 +1,50 @@
-/* You can add global styles to this file, and also import other style files */
+/* Estilos globais */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+h2 {
+  margin-top: 0;
+  color: #1f3a5f;
+}
+
+/* Botões usados no projeto todo */
+.btn {
+  display: inline-block;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #6c757d;
+  color: white;
+  text-decoration: none;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.btn:disabled {
+  background-color: #b5bbc1;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  background-color: #2563eb;
+}
+
+.btn-success {
+  background-color: #16a34a;
+}
+
+.btn-danger {
+  background-color: #dc2626;
+}

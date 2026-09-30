@@ -1,0 +1,25 @@
+<div class="card">
+  <h2>{{ isEdit ? 'Editar Produto' : 'Criar Produto' }}</h2>
+
+  <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+    <div class="campo">
+      <label for="title">Título</label>
+      <input id="title" formControlName="title" type="text" />
+    </div>
+
+    <div class="campo">
+      <label for="price">Preço</label>
+      <input id="price" formControlName="price" type="number" />
+    </div>
+
+    <div class="campo">
+      <label for="description">Descrição</label>
+      <textarea id="description" formControlName="description" rows="4"></textarea>
+    </div>
+
+    <div class="botoes">
+      <button class="btn btn-success" type="submit" [disabled]="productForm.invalid">Guardar</button>
+      <button class="btn" type="button" (click)="cancel()">Cancelar</button>
+    </div>
+  </form>
+</div>

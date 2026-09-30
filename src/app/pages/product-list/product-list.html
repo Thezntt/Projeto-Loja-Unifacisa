@@ -1,0 +1,30 @@
+<div class="topo">
+  <h2>Lista de Produtos</h2>
+  <button class="btn btn-success" routerLink="/create">+ Criar Novo Produto</button>
+</div>
+
+@if (loading()) {
+  <p class="mensagem">Carregando produtos...</p>
+} @else if (error()) {
+  <p class="mensagem erro">
+    {{ error() }}
+    <button class="btn btn-primary" (click)="loadProducts()">Tentar novamente</button>
+  </p>
+} @else {
+  <ul>
+    @for (product of products(); track product.id) {
+      <li>
+        <div>
+          <span class="nome">{{ product.title }}</span>
+          <span class="preco">$ {{ product.price }}</span>
+        </div>
+        <div class="acoes">
+          <button class="btn btn-primary" [routerLink]="['/edit', product.id]">Editar</button>
+          <button class="btn btn-danger" (click)="deleteProduct(product.id)">Apagar</button>
+        </div>
+      </li>
+    } @empty {
+      <p class="mensagem">Nenhum produto encontrado.</p>
+    }
+  </ul>
+}

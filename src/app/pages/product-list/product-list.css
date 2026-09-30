@@ -1,0 +1,51 @@
+.topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.topo h2 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 14px 16px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.nome {
+  font-weight: bold;
+}
+
+.preco {
+  color: #16a34a;
+  margin-left: 10px;
+}
+
+.acoes {
+  display: flex;
+  gap: 8px;
+}
+
+.mensagem {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}
+
+.erro {
+  color: #dc2626;
+}
