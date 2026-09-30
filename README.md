@@ -61,7 +61,7 @@ Pré-requisito: [Node.js](https://nodejs.org/) instalado.
 
 ```bash
 # 1. clonar o repositório
-git clone <link-do-repositorio>
+git clone https://github.com/Thezntt/Projeto-Loja-Unifacisa
 
 # 2. entrar na pasta
 cd projeto-unifacisa-produtos
