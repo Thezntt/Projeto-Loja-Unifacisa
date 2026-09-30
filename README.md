@@ -8,11 +8,10 @@ Front-end em Angular que consome a API pública [DummyJSON](https://dummyjson.co
 
 | Nome completo | Matrícula |
 | ------------- | --------- |
-|               |           |
-|               |           |
-|               |           |
-|               |           |
-|               |           |
+|Tony Anderson Ferreira Tomaz|2515050036|
+|Luis Antonio Sarmento Maracajá|2515050029|
+|Breno de Oliveira Barbosa|2515050049|
+|Alexia Silva Pereira|2515050005|
 
 ## Funcionalidades
 
